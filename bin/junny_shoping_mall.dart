@@ -82,7 +82,8 @@ void main() {
         shoppingMall.showTotal();
         break;
       case '4':
-        print('정말 종료하시겠습니까? [5] 종료 / 다른 키 입력 시 취소');
+        print('정말 종료하시겠습니까? [5] 종료 / 다른 키 입력 실행 취소');
+        // 글자 수정
         String? confirmExit = stdin.readLineSync();
         if (confirmExit == '5') {
           print('이용해 주셔서 감사합니다 ~ 안녕히 가세요!');
@@ -93,6 +94,7 @@ void main() {
         break;
       default:
         print('지원하지 않는 기능입니다! 다시 시도해 주세요 ..');
+      // 주석달기
     }
   }
 }
